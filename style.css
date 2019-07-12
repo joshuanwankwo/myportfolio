@@ -1,0 +1,410 @@
+* {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+header {
+  background: linear-gradient(
+      rgb(0, 0, 0, 0.5),
+      rgb(0, 0, 0, 0.5),
+      rgb(0, 0, 0, 0.5),
+      rgb(0, 0, 0, 0.5)
+    ),
+    url("src/Joshua\ Eye.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(36, 33, 33, 0.404);
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  width: 30%;
+}
+
+.logo > a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 50px;
+}
+
+.logo > a:hover {
+  border: 2px solid #5f3521;
+}
+.menu {
+  width: 50%;
+}
+
+nav > .menu > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav > .menu > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px 10px;
+}
+
+nav > .menu > ul > li > a:hover {
+  border-bottom: 2px solid #5f3521;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: 110vh;
+  width: 100vw;
+  position: relative;
+}
+
+.intro {
+  height: 50%;
+  width: 40%;
+  position: absolute;
+  right: 80px;
+  bottom: 200px;
+}
+
+main > .intro > h3 {
+  font-size: 5rem;
+  font-family: sans-serif;
+  color: white;
+}
+
+main > .intro > p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+main > .intro > a > i{
+    color: white;
+    font-size: 15px;
+    background-color: #5f3521;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 15px;
+
+}
+
+main > .action {
+  margin-right: 100px;
+}
+
+.action button {
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.action button:hover {
+  background-color: #5f3521;
+  color: white;
+  cursor: pointer;
+}
+
+.action a {
+  color: white;
+  font-family: sans-serif;
+  padding: 10px 30px;
+  font-style: italic;
+}
+
+#about {
+  height: 100%;
+}
+
+#about > h1 {
+  padding: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+.about-main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-main > div {
+    height: 400px;
+    width: 500px;
+    margin: 30px;
+}
+
+.description > h1 {
+  padding: 30px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.description > p {
+  font-family: sans-serif;
+  color: gray;
+  font-size: 15px;
+  margin: 10px 0px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.about-main > .play > iframe {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%
+}
+
+.about-main > .description > .footerr > a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #5f3521;
+  text-align: center;
+  padding: 10px;
+}
+
+#about > .about-main > .description > .footerr {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+#skills {
+  height:50%;
+  background-color: #5f3521;
+}
+
+#skills > .skill-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#skills > h1 {
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white
+}
+
+#skills > .skill-wrapper >div {
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+#projects {
+  height: 100%;
+}
+
+#projects h1{
+    text-align: center;
+    font-family: sans-serif;
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.projects-wrapper > div {
+  height: 200px;
+  width: 400px;
+  background-color: rgba(95, 53, 33, 0.383);
+  padding: 10px;
+  margin: 10px; 
+}
+
+
+.projects-wrapper > div:nth-child(1){
+    width: 500px;
+}
+
+.projects-wrapper > div:nth-child(2){
+    width: 250px;
+}
+
+.projects-wrapper > div:nth-child(3){
+    width: 250px;
+}
+
+.projects-wrapper > div:nth-child(4){
+    width: 250px;
+}
+
+
+.projects-wrapper > div:nth-child(5){
+    width: 250px;
+}
+
+
+.projects-wrapper > div:nth-child(6){
+    width: 500px;
+
+}
+
+
+.projects-wrapper > div:nth-child(7){
+    width: 500px;
+}
+
+.projects-wrapper > div:nth-child(8){
+    width: 250px;
+}
+
+.projects-wrapper > div:nth-child(9){
+    width: 250px;
+}
+
+.projects-wrapper > .first-project{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    right: 635px;
+    margin-left: 30px
+} 
+
+#testimonial > h1{
+    font-size: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+#testimonial > .testimonial-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#testimonial > .testimonial-wrapper > div {
+    height: 400px;
+    width: 400px;
+    border: 1px solid red;
+    margin: 50px 0px;
+}
+
+#contact{
+    height: 100%;
+    border: 1px solid red;
+}
+
+#contact h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding: 30px;
+}
+
+#contact .contact-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: space-around;
+    align-items: center;
+}
+
+#contact .contact-details {
+    height: 500px;
+    width: 500px;
+    margin: 0px 0px 30px 50px;
+}
+
+#contact .contact-details > h5{
+    padding: 30px;
+    font-family: sans-serif;
+    color: gray;
+    font-size: 20px;
+
+}
+
+#contact > .map > iframe{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    background-color: #5f3521;
+}
+
+footer > .social > h3 {
+    color: white;
+    font-family: sans-serif;
+}
+
+footer > h3{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 40px;
+}
+
+footer> .social{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    padding: 50px;
+}
+
+ footer > .social > .icontainer{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+} 
+
+footer > .social > .icontainer > i{
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    color: #5f3521;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 15px;
+} 
+
+strong{
+    color: black;
+    font-size: 20px;
+}
