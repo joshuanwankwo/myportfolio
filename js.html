@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="msg">check</h1>
+    <script>
+        var userPreference;
+        if (confirm ("Do you want to save changes") == true){
+            userPreference = "Data saved successfully!";
+        } else{
+            userPreference = "Save Canceled"
+        }
+        document.getElementById("msg").innerHTML = userPreference;
+
+        var tenure = prompt("Please entre prefered tenure in years", "17");
+        if (tenure !== null){
+            alert("You have " + tenure * 2 + " more tenures to go");
+        }
+    </script>
+</body>
+</html>
