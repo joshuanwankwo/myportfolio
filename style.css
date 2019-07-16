@@ -15,9 +15,9 @@ header {
       rgb(0, 0, 0, 0.5),
       rgb(0, 0, 0, 0.5)
     ),
-    url("src/Joshua\ Eye.jpg");
+    url("../src/Joshua\ Eye.jpg");
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -134,6 +134,8 @@ nav > .menu > ul > li > a:hover {
   header .icon {
     display: block;
   }
+
+
 }
 
 main {
@@ -150,7 +152,7 @@ main {
   position: absolute;
   right: 50px;
   bottom: 150px;
-}
+} 
 
 main > .intro > h3 {
   font-size: 4rem;
@@ -201,6 +203,15 @@ main > .action {
   font-style: italic;
 }
 
+@media screen and (max-width: 350px){
+  .intro {
+    height: 50%;
+    position: absolute;
+
+  } 
+}
+
+/* This is where I'm trying to style the about me section */
 #about {
   height: 100%;
 }
