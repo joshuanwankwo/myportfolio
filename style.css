@@ -3,10 +3,10 @@
   padding: 0px;
 }
 
-body {
+/* body {
   width: 100%;
-  height: 100%;
-}
+  height: 100vh
+} */
 
 header {
   background: linear-gradient(
@@ -56,7 +56,7 @@ nav > div {
 
 .logo {
   justify-content: flex-start;
-  padding: 7px;
+  padding: 10px;
   width: 30%;
 }
 
@@ -135,7 +135,6 @@ nav > .menu > ul > li > a:hover {
     display: block;
   }
 
-
 }
 
 main {
@@ -188,6 +187,7 @@ main > .action {
   border: none;
   font-family: sans-serif;
   font-weight: 200;
+  padding-right: 10px;
 }
 
 .action button:hover {
@@ -203,12 +203,42 @@ main > .action {
   font-style: italic;
 }
 
-@media screen and (max-width: 350px){
-  .intro {
-    height: 50%;
-    position: absolute;
-
+@media screen and (max-width: 800px){
+  .intro {    
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    right: 0px !important;
+    bottom: 0px !important;
+    /* border: 2px solid green ; */
   } 
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main > .intro > h3 {
+    font-size: 4rem;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  main > .intro > p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+
 }
 
 /* This is where I'm trying to style the about me section */
@@ -217,7 +247,7 @@ main > .action {
 }
 
 #about > h1 {
-  padding: 0px;
+  padding: 30px;
   text-align: center;
   font-family: sans-serif;
   font-size: 2rem;
@@ -274,6 +304,7 @@ main > .action {
 #skills {
   height: 50%;
   background-color: #5f3521;
+  padding: 20px
 }
 
 #skills > .skill-wrapper {
@@ -294,7 +325,7 @@ main > .action {
   height: 100px;
   width: 200px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 20px;
   margin: 20px;
   text-align: center;
@@ -311,7 +342,7 @@ main > .action {
   background-color: gray;
   overflow: hidden;
   display: block;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .progress-container > .html {
@@ -351,7 +382,7 @@ main > .action {
   height: 20px;
   background-color: #5f3521;
   float: left;
-  width: 20%;
+  width: 40%;
   animation: rolling 5s;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -572,7 +603,7 @@ i {
 }
 
 #contact .contact-details > h5 {
-  padding: 30px;
+  padding: 0px;
   font-family: sans-serif;
   color: gray;
   line-height: 30px;
